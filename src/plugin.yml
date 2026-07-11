@@ -2,4 +2,5 @@ name: BoatWars
 main: no.runsafe.boatwars.Plugin
 version: 1.0.@BUILD@
 author: TracerOn
+depend: [RunsafeWorldGuardBridge]
 description: SoonTM

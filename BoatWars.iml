@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Framework" />
     <orderEntry type="library" name="spigot" level="project" />
+    <orderEntry type="library" name="RunsafeWorldGuardBridge" level="project" />
   </component>
 </module>
