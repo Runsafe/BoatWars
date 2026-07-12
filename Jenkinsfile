@@ -4,9 +4,9 @@ pipeline {
     copyArtifactPermission('*');
     skipDefaultCheckout true
   }
-  environment { plugin = "Boondries" }
+  environment { plugin = "BoatWars" }
   triggers {
-    upstream '/Runsafe/Framework/' + env.BRANCH_NAME
+    upstream '/Runsafe/WorldGuardBridge/' + env.BRANCH_NAME
     pollSCM '@monthly'
   }
   stages {
@@ -16,7 +16,7 @@ pipeline {
         ant 'Default'
         jdk 'Default'
       }
-      steps { buildPluginWithAnt env.plugin, '', 'build/jar/*.jar' }
+      steps { buildPluginWithAnt env.plugin, 'WorldGuardBridge', 'build/jar/*.jar' }
     }
     stage('Deploy to test server') {
       when { not { branch 'master' } }
