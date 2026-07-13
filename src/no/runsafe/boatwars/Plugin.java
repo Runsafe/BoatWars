@@ -1,4 +1,4 @@
-package no.runsafe.boatwars
+package no.runsafe.boatwars;
 
 import no.runsafe.framework.RunsafeConfigurablePlugin;
 import no.runsafe.framework.api.log.IDebug;
